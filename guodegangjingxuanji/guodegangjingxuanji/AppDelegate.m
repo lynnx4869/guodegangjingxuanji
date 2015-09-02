@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainTabbarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    MainTabbarViewController *mvc = [[MainTabbarViewController alloc] init];
+    self.window.rootViewController = mvc;
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake((ScreenWidth-70)/2, ScreenHeight-69, 70, 69);
+    [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_normal"] forState:UIControlStateNormal];
+    [self.window addSubview:btn];
     
     return YES;
 }

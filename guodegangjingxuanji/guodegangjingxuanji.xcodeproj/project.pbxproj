@@ -557,6 +557,14 @@
 		BC53BB0E1B96991300CBD08C /* webview_toolbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC53B8F71B96991300CBD08C /* webview_toolbar_bg@2x.png */; };
 		BC53BB0F1B96991300CBD08C /* wxlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC53B8F81B96991300CBD08C /* wxlogo.png */; };
 		BC53BB101B96991300CBD08C /* wxlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC53B8F91B96991300CBD08C /* wxlogo@2x.png */; };
+		BC5C270E1B96C90A005AD2CD /* MainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C270D1B96C90A005AD2CD /* MainTabbarViewController.m */; };
+		BC5C27111B96D1B8005AD2CD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C27101B96D1B8005AD2CD /* HomeViewController.m */; };
+		BC5C27151B96D22D005AD2CD /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C27141B96D22D005AD2CD /* CategoryViewController.m */; };
+		BC5C27181B96D24C005AD2CD /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C27171B96D24C005AD2CD /* DownloadViewController.m */; };
+		BC5C271B1B96D28B005AD2CD /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C271A1B96D28B005AD2CD /* SubscribeViewController.m */; };
+		BC5C271E1B96DC3B005AD2CD /* TabBarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C271D1B96DC3B005AD2CD /* TabBarImageView.m */; };
+		BC5C27211B96EA58005AD2CD /* TabBarButtomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C27201B96EA58005AD2CD /* TabBarButtomView.m */; };
+		BC5C27271B96FB76005AD2CD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C27261B96FB76005AD2CD /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -567,7 +575,6 @@
 		BC53B69F1B968DE500CBD08C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BC53B6A71B968DE500CBD08C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC53B6C71B968F4F00CBD08C /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
-		BC53B6C81B968F6600CBD08C /* gdgpre.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gdgpre.pch; sourceTree = "<group>"; };
 		BC53B6CB1B96990100CBD08C /* 不想起床铃声（公子歌_歌笙）.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "不想起床铃声（公子歌_歌笙）.mp3"; sourceTree = "<group>"; };
 		BC53B6CC1B96990100CBD08C /* 超萌查水表（新月冰冰）.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "超萌查水表（新月冰冰）.mp3"; sourceTree = "<group>"; };
 		BC53B6CD1B96990100CBD08C /* 零智商-通用版（唐家大小姐）.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "零智商-通用版（唐家大小姐）.mp3"; sourceTree = "<group>"; };
@@ -1115,6 +1122,23 @@
 		BC53B8F71B96991300CBD08C /* webview_toolbar_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webview_toolbar_bg@2x.png"; sourceTree = "<group>"; };
 		BC53B8F81B96991300CBD08C /* wxlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wxlogo.png; sourceTree = "<group>"; };
 		BC53B8F91B96991300CBD08C /* wxlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wxlogo@2x.png"; sourceTree = "<group>"; };
+		BC5C270C1B96C90A005AD2CD /* MainTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbarViewController.h; sourceTree = "<group>"; };
+		BC5C270D1B96C90A005AD2CD /* MainTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabbarViewController.m; sourceTree = "<group>"; };
+		BC5C270F1B96D1B8005AD2CD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BC5C27101B96D1B8005AD2CD /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BC5C27121B96D1E6005AD2CD /* GdgPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GdgPrefixHeader.pch; sourceTree = "<group>"; };
+		BC5C27131B96D22D005AD2CD /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		BC5C27141B96D22D005AD2CD /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		BC5C27161B96D24C005AD2CD /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		BC5C27171B96D24C005AD2CD /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		BC5C27191B96D28B005AD2CD /* SubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeViewController.h; sourceTree = "<group>"; };
+		BC5C271A1B96D28B005AD2CD /* SubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeViewController.m; sourceTree = "<group>"; };
+		BC5C271C1B96DC3B005AD2CD /* TabBarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarImageView.h; sourceTree = "<group>"; };
+		BC5C271D1B96DC3B005AD2CD /* TabBarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarImageView.m; sourceTree = "<group>"; };
+		BC5C271F1B96EA58005AD2CD /* TabBarButtomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarButtomView.h; sourceTree = "<group>"; };
+		BC5C27201B96EA58005AD2CD /* TabBarButtomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarButtomView.m; sourceTree = "<group>"; };
+		BC5C27251B96FB76005AD2CD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BC5C27261B96FB76005AD2CD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1174,8 +1198,14 @@
 		BC53B6C01B968EB300CBD08C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				BC53B6C81B968F6600CBD08C /* gdgpre.pch */,
+				BC5C27121B96D1E6005AD2CD /* GdgPrefixHeader.pch */,
 				BC53B6C71B968F4F00CBD08C /* Const.h */,
+				BC5C271C1B96DC3B005AD2CD /* TabBarImageView.h */,
+				BC5C271D1B96DC3B005AD2CD /* TabBarImageView.m */,
+				BC5C271F1B96EA58005AD2CD /* TabBarButtomView.h */,
+				BC5C27201B96EA58005AD2CD /* TabBarButtomView.m */,
+				BC5C27251B96FB76005AD2CD /* RootViewController.h */,
+				BC5C27261B96FB76005AD2CD /* RootViewController.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -1207,6 +1237,16 @@
 		BC53B6C41B968F0600CBD08C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC5C270C1B96C90A005AD2CD /* MainTabbarViewController.h */,
+				BC5C270D1B96C90A005AD2CD /* MainTabbarViewController.m */,
+				BC5C270F1B96D1B8005AD2CD /* HomeViewController.h */,
+				BC5C27101B96D1B8005AD2CD /* HomeViewController.m */,
+				BC5C27131B96D22D005AD2CD /* CategoryViewController.h */,
+				BC5C27141B96D22D005AD2CD /* CategoryViewController.m */,
+				BC5C27161B96D24C005AD2CD /* DownloadViewController.h */,
+				BC5C27171B96D24C005AD2CD /* DownloadViewController.m */,
+				BC5C27191B96D28B005AD2CD /* SubscribeViewController.h */,
+				BC5C271A1B96D28B005AD2CD /* SubscribeViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1817,6 +1857,11 @@
 				TargetAttributes = {
 					BC53B6961B968DE400CBD08C = {
 						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -2402,7 +2447,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC53B6A01B968DE500CBD08C /* AppDelegate.m in Sources */,
+				BC5C27151B96D22D005AD2CD /* CategoryViewController.m in Sources */,
+				BC5C271B1B96D28B005AD2CD /* SubscribeViewController.m in Sources */,
+				BC5C27181B96D24C005AD2CD /* DownloadViewController.m in Sources */,
+				BC5C27271B96FB76005AD2CD /* RootViewController.m in Sources */,
+				BC5C270E1B96C90A005AD2CD /* MainTabbarViewController.m in Sources */,
 				BC53B69D1B968DE500CBD08C /* main.m in Sources */,
+				BC5C27211B96EA58005AD2CD /* TabBarButtomView.m in Sources */,
+				BC5C271E1B96DC3B005AD2CD /* TabBarImageView.m in Sources */,
+				BC5C27111B96D1B8005AD2CD /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2494,7 +2547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/qianfeng/GitHub/guodegangjingxuanji/guodegangjingxuanji/guodegangjingxuanji/Utility/gdgpre.pch;
+				GCC_PREFIX_HEADER = /Users/qianfeng/GitHub/guodegangjingxuanji/guodegangjingxuanji/guodegangjingxuanji/Utility/GdgPrefixHeader.pch;
 				INFOPLIST_FILE = guodegangjingxuanji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2506,7 +2559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/qianfeng/GitHub/guodegangjingxuanji/guodegangjingxuanji/guodegangjingxuanji/Utility/gdgpre.pch;
+				GCC_PREFIX_HEADER = /Users/qianfeng/GitHub/guodegangjingxuanji/guodegangjingxuanji/guodegangjingxuanji/Utility/GdgPrefixHeader.pch;
 				INFOPLIST_FILE = guodegangjingxuanji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

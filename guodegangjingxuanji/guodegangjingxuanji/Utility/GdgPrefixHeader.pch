@@ -1,13 +1,13 @@
 //
-//  gdgpre.pch
+//  GdgPrefixHeader.pch
 //  guodegangjingxuanji
 //
 //  Created by qianfeng on 15/9/2.
 //  Copyright (c) 2015年 lyning. All rights reserved.
 //
 
-#ifndef guodegangjingxuanji_gdgpre_pch
-#define guodegangjingxuanji_gdgpre_pch
+#ifndef guodegangjingxuanji_GdgPrefixHeader_pch
+#define guodegangjingxuanji_GdgPrefixHeader_pch
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

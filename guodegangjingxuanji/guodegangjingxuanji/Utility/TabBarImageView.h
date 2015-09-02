@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  TabBarImageView.h
 //  guodegangjingxuanji
 //
 //  Created by qianfeng on 15/9/2.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface TabBarImageView : UIImageView
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) NSMutableArray *btnsArray;
 
 @end
-
