@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 20, 20);
+    [btn setBackgroundImage:[UIImage imageNamed:@"btn_setting_n"] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:@"btn_setting_h"] forState:UIControlStateHighlighted];
+    [btn addTarget:self action:@selector(gotoSetting:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem = item;
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"view_background"]];
     
     NSArray *titleArray = @[@"首页", @"听书城", @"下载听", @"订阅历史"];
     NSArray *imageArray = @[@"tabbar_sound_n", @"tabbar_bookcase_n", @"tabbar_download_n", @"tabbar_fav_n"];
@@ -34,6 +43,8 @@
         [btn addGestureRecognizer:gr];
     }
     [self.view addSubview:_tabbarBgImageView];
+    
+    [self.navigationItem setHidesBackButton:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +55,10 @@
 - (void)tabbarBtnClick:(UITapGestureRecognizer *)gr{
     TabBarButtomView *btn = (TabBarButtomView *)gr.view;
     self.tabBarController.selectedIndex = btn.tag - 300;
+}
+
+- (void)gotoSetting:(UIButton *)btn{
+    
 }
 
 @end

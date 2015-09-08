@@ -25,10 +25,16 @@
     MainTabbarViewController *mvc = [[MainTabbarViewController alloc] init];
     self.window.rootViewController = mvc;
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake((ScreenWidth-70)/2, ScreenHeight-69, 70, 69);
-    [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_normal"] forState:UIControlStateNormal];
-    [self.window addSubview:btn];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth-70)/2, ScreenHeight-69, 70, 69)];
+    imageView.userInteractionEnabled = YES;
+    imageView.image = [UIImage imageNamed:@"tabbar_np_normal"];
+    [self.window addSubview:imageView];
+    
+    UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    playBtn.frame = CGRectMake(15, 15, 40, 45);
+    [playBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_icon"] forState:UIControlStateNormal];
+    [playBtn setImage:[UIImage imageNamed:@"tabbar_np_play"] forState:UIControlStateNormal];
+    [imageView addSubview:playBtn];
     
     return YES;
 }

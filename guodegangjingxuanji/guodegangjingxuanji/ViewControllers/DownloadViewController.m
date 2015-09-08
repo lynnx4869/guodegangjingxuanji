@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor yellowColor];
     TabBarButtomView *btn = self.tabbarBgImageView.btnsArray[2];
     btn.isSelected = YES;
 }

@@ -14,7 +14,7 @@
 //专辑界面(uid)
 #define lAlbumUrl @"http://app.9nali.com/907/bozhus/%@?page_id=1&device=iPhone&version=1.3.2"
 //节目界面(albumId, page, 降序(true, false))
-#define lProgrammeUrl @"http://app.9nali.com/907/albums/%@?page_id=%@&isAsc=%@&device=iPhone&version=1.3.2"
+#define lProgrammeUrl @"http://app.9nali.com/907/albums/%@?page_id=%d&isAsc=%@&device=iPhone&version=1.3.2"
 //播放界面(trackId)
 #define lPlayerUrl @"http://app.9nali.com/907/tracks/%@?device=iPhone&version=1.3.2"
 

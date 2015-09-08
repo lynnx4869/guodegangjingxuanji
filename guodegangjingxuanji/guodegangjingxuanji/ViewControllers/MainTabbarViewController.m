@@ -11,6 +11,7 @@
 #import "CategoryViewController.h"
 #import "DownloadViewController.h"
 #import "SubscribeViewController.h"
+#import "NavViewController.h"
 
 @interface MainTabbarViewController ()
 
@@ -28,7 +29,7 @@
         NSString *ctrlString = ctrlArray[i];
         Class cls = NSClassFromString(ctrlString);
         UIViewController *vc = [[cls alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        NavViewController *nav = [[NavViewController alloc] initWithRootViewController:vc];
         [array addObject:nav];
     }
     self.viewControllers = [NSArray arrayWithArray:array];
