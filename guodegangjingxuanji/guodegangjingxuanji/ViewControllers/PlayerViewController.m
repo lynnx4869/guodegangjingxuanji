@@ -7,6 +7,7 @@
 //
 
 #import "PlayerViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface PlayerViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    AVAudioSession *session = [AVAudioSession sharedInstance];
 }
 
 - (void)didReceiveMemoryWarning {

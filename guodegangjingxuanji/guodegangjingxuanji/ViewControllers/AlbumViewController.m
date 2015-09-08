@@ -38,6 +38,8 @@
 }
 
 - (void)createTableView{
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight-113)];
     _tableView.delegate = self;
     _tableView.dataSource = self;

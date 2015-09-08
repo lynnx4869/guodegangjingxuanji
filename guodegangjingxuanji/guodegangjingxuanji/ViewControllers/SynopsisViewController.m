@@ -38,7 +38,7 @@
     }else{
         bgView.frame = CGRectMake(10, 74, ScreenWidth-20, frame.size.height+40);
     }
-    bgView.image = [UIImage imageNamed:@"bg_album_detail_text"];
+    bgView.image = [UIImage imageNamed:@"bg_soundInfoView"];
     [self.view addSubview:bgView];
     
     UILabel *label = [[UILabel alloc] initWithFrame:frame];

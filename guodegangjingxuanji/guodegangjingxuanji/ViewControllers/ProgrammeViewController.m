@@ -75,6 +75,8 @@
 }
 
 - (void)createTableView{
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-49) style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -188,7 +190,7 @@
     if(_isList){
         return 50;
     }else{
-        return 450;
+        return 320;
     }
 }
 
@@ -208,10 +210,34 @@
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.backgroundColor = [UIColor clearColor];
             
-            UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, ScreenWidth-20, 430)];
-            bgImageView.image = [UIImage imageNamed:@"bg_album_detail_text"];
-            [cell addSubview:bgImageView];
+            UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, ScreenWidth-20, 300)];
+            bgImageView.image = [UIImage imageNamed:@"bg_soundInfoView"];
+            [cell.contentView addSubview:bgImageView];
+            
+            UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:bgImageView.bounds];
+            scrollView.backgroundColor = [UIColor clearColor];
+            scrollView.tag = 400;
+            [bgImageView addSubview:scrollView];
+            
+            UILabel *label = [[UILabel alloc] init];
+            label.numberOfLines = 0;
+            label.font = [UIFont systemFontOfSize:14];
+            label.tag = 500;
+            [scrollView addSubview:label];
         }
+        
+        CGRect frame = [_programmeModel.richIntro boundingRectWithSize:CGSizeMake(ScreenWidth-40, CGFLOAT_MAX)
+                                                               options:NSStringDrawingUsesLineFragmentOrigin
+                                                            attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]}
+                                                               context:nil];
+        
+        UIScrollView *scrollView = (UIScrollView *)[self.view viewWithTag:400];
+        scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, frame.size.height+20);
+        
+        UILabel *label = (UILabel *)[self.view viewWithTag:500];
+        label.frame = CGRectMake(10, 10, frame.size.width, frame.size.height);
+        label.text = _programmeModel.richIntro;
+        
         return cell;
     }
 }
