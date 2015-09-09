@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 #import "MainTabbarViewController.h"
+#import "PlayerViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) MainTabbarViewController *mvc;
 
 @end
 
@@ -22,21 +25,27 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    MainTabbarViewController *mvc = [[MainTabbarViewController alloc] init];
-    self.window.rootViewController = mvc;
+    _mvc = [[MainTabbarViewController alloc] init];
+    self.window.rootViewController = _mvc;
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth-70)/2, ScreenHeight-69, 70, 69)];
-    imageView.userInteractionEnabled = YES;
-    imageView.image = [UIImage imageNamed:@"tabbar_np_normal"];
-    [self.window addSubview:imageView];
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((ScreenWidth-70)/2, ScreenHeight-69, 70, 69)];
+    _imageView.userInteractionEnabled = YES;
+    _imageView.image = [UIImage imageNamed:@"tabbar_np_normal"];
+    [self.window addSubview:_imageView];
     
     UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     playBtn.frame = CGRectMake(15, 15, 40, 45);
     [playBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_np_icon"] forState:UIControlStateNormal];
     [playBtn setImage:[UIImage imageNamed:@"tabbar_np_play"] forState:UIControlStateNormal];
-    [imageView addSubview:playBtn];
+    [playBtn addTarget:self action:@selector(gotoPlayer) forControlEvents:UIControlEventTouchUpInside];
+    [_imageView addSubview:playBtn];
     
     return YES;
+}
+
+- (void)gotoPlayer{
+    PlayerViewController *pvc = [[PlayerViewController alloc] init];
+    [_mvc presentViewController:pvc animated:YES completion:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
