@@ -14,6 +14,7 @@
 #import "ProgrammeHeadView.h"
 #import "ProgrammeSectionView.h"
 #import "ProgrammeCell.h"
+#import "PlayerViewController.h"
 
 @interface ProgrammeViewController ()
     <HttpManagerDelegate, UITableViewDelegate, UITableViewDataSource, SelectTabDelegate>
@@ -240,6 +241,14 @@
         
         return cell;
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    PlayerViewController *pvc = [[PlayerViewController alloc] init];
+    pvc.trackId = ((Programme *)_dataArray[indexPath.row]).trackId;
+    pvc.listArray = _dataArray;
+    pvc.curIndex = indexPath.row;
+    [self presentViewController:pvc animated:YES completion:nil];
 }
 
 #pragma maek - SelectTabDelegate

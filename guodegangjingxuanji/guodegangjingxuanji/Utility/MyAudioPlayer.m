@@ -10,6 +10,8 @@
 
 @interface MyAudioPlayer ()
 
+@property (nonatomic, strong) NSThread *thread;
+
 @end
 
 @implementation MyAudioPlayer
@@ -29,7 +31,9 @@
 {
     self = [super init];
     if (self) {
-        _currentList = [NSMutableArray array];
+        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+        [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+        [audioSession setActive:YES error:nil];
     }
     return self;
 }
@@ -39,10 +43,15 @@
         _currentPlayer = nil;
         _currentPlayer = currentPlayer;
         
-        _player = nil;
-        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:currentPlayer.playUrl64] error:nil];
-        _player.delegate = self;
+        _thread = nil;
+        _thread = [[NSThread alloc] initWithTarget:self selector:@selector(playNew:) object:currentPlayer];
+        [_thread start];
     }
 }
+
+- (void)playNew:(id)sender{
+    
+}
+
 
 @end

@@ -15,9 +15,8 @@
 
 + (instancetype)shareIntance;
 
-@property (nonatomic, strong) AVAudioPlayer *player;
-
-@property (nonatomic, strong) NSMutableArray *currentList;
+@property (nonatomic, strong) NSArray *currentList;
 @property (nonatomic, strong) Programme *currentPlayer;
+@property (nonatomic, assign) NSInteger currentIndex;
 
 @end

@@ -42,4 +42,9 @@
 @property (nonatomic, copy) NSString *createdAt;
 @property (nonatomic, copy) NSString *updatedAt;
 
+@property (nonatomic, copy) NSString *uid;
+@property (nonatomic, copy) NSString *intro;
+@property (nonatomic, copy) NSString *rich_intro;
+@property (nonatomic, copy) NSString *lyric;
+
 @end

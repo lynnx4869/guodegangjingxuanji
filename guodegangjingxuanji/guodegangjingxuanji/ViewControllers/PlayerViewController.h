@@ -10,4 +10,8 @@
 
 @interface PlayerViewController : UIViewController
 
+@property (nonatomic, copy) NSString *trackId;
+@property (nonatomic, strong) NSArray *listArray;
+@property (nonatomic, assign) NSInteger curIndex;
+
 @end
