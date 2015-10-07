@@ -39,7 +39,7 @@
     [playBtn setImage:[UIImage imageNamed:@"tabbar_np_play"] forState:UIControlStateNormal];
     [playBtn addTarget:self action:@selector(gotoPlayer) forControlEvents:UIControlEventTouchUpInside];
     [_imageView addSubview:playBtn];
-    
+    NSString* str = @"哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈";
     return YES;
 }
 
